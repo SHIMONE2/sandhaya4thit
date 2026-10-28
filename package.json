@@ -1,0 +1,8 @@
+{
+  "name": "sandhaya4thit-registration",
+  "version": "2.0.0",
+  "description": "Thai registration website for สนธยา4ทิศ on 29 October 2026",
+  "main": "server.js",
+  "scripts": {"start": "node server.js", "dev": "node --watch server.js"},
+  "dependencies": {"better-sqlite3": "^11.8.1", "express": "^4.21.2", "express-rate-limit": "^7.5.0", "helmet": "^8.0.0"}
+}

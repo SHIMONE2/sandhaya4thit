@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#10172a"><meta name="description" content="ลงทะเบียนเข้าร่วมงานสนธยา4ทิศ วันที่ 29 ตุลาคม 2569">
+  <title>ลงทะเบียน | สนธยา4ทิศ</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <header class="topbar"><a class="brand" href="/"><span class="brand-mark">✦</span><span>สนธยา<span class="accent">4</span>ทิศ</span></a><nav class="nav-links"><a class="admin-link login-link" href="/login.html">เข้าสู่ระบบผู้ลงทะเบียน</a><a class="admin-link" href="/admin.html">สำหรับผู้จัดงาน ↗</a></nav></header>
+  <main class="layout">
+    <section class="intro">
+      <div class="eyebrow"><span class="dot"></span> EVENT REGISTRATION</div>
+      <h1>เมื่อสนธยา<br><span>บรรจบทั้งสี่ทิศ</span></h1>
+      <p class="lead">ทุกการเดินทางเริ่มต้นจากการลงทะเบียน<br>มาร่วมเป็นส่วนหนึ่งของเรื่องราวครั้งนี้ไปด้วยกัน</p>
+      <div class="compass" aria-label="สัญลักษณ์เข็มทิศสี่ทิศ"><div class="compass-ring"><span class="north">N</span><span class="east">E</span><span class="south">S</span><span class="west">W</span><div class="needle">✧</div></div></div>
+      <div class="event-note"><span>✧</span><div><strong>สนธยา4ทิศ</strong><small>ลงทะเบียนออนไลน์อย่างเป็นทางการ</small></div></div>
+      <div class="event-details"><div><span>วันจัดงาน</span><strong>29 ตุลาคม 2569</strong></div><div><span>สถานที่</span><strong>มหาวิทยาลัยหอการค้าไทย อาคาร 23 ชั้น 7</strong></div></div>
+    </section>
+    <section class="form-card">
+      <div class="card-heading"><div><div class="eyebrow">WELCOME</div><h2>ลงทะเบียนเข้าร่วมงาน</h2><p>สำหรับบุคคลทั่วไป กรุณากรอกข้อมูลให้ครบถ้วน</p></div><div class="mini-icon">✦</div></div>
+      <form id="registration-form">
+        <div class="field"><label for="attendee_type">ประเภทผู้ลงทะเบียน <b>*</b></label><select id="attendee_type" name="attendee_type" required><option value="">เลือกประเภท</option><option>นักเรียน</option><option>นักศึกษา</option><option>อาจารย์</option><option>บุคคลภายนอก</option></select></div>
+        <div class="field"><label for="full_name">ชื่อ - นามสกุล <b>*</b></label><input id="full_name" name="full_name" required maxlength="120" autocomplete="name" placeholder="กรอกชื่อและนามสกุล"></div>
+        <div class="field"><label for="nickname">ชื่อเล่น</label><input id="nickname" name="nickname" maxlength="60" placeholder="ชื่อที่ใช้เรียก (ถ้ามี)"></div>
+        <div class="field-row"><div class="field"><label for="phone">เบอร์โทรศัพท์ <b>*</b></label><input id="phone" name="phone" type="tel" required minlength="8" maxlength="20" autocomplete="tel" placeholder="08X-XXX-XXXX"></div><div class="field"><label for="email">อีเมล <b>*</b></label><input id="email" name="email" type="email" required maxlength="200" autocomplete="email" placeholder="you@example.com"></div></div>
+        <div class="field-row" id="org-row"><div class="field" id="faculty-field"><label for="faculty">คณะ <b>*</b></label><input id="faculty" name="faculty" required maxlength="160" placeholder="กรอกคณะ"></div><div class="field" id="institution-field"><label for="institution">สถาบัน <b>*</b></label><input id="institution" name="institution" required maxlength="160" autocomplete="organization" placeholder="กรอกสถาบัน / มหาวิทยาลัย"></div></div>
+        <div class="field" id="student_id-field"><label for="student_id">รหัสนักศึกษา <b>*</b></label><input id="student_id" name="student_id" required maxlength="60" placeholder="กรอกรหัสนักศึกษา"></div>
+        <div class="field"><label for="play_round">รอบเวลาที่จะเล่น <b>*</b></label><select id="play_round" name="play_round" required><option value="">กำลังโหลดรอบเวลา...</option></select><small class="hint" id="round-hint"></small></div>
+        <label class="consent"><input type="checkbox" required><span>ยินยอมให้จัดเก็บข้อมูลเพื่อใช้ในการลงทะเบียนและประสานงานเกี่ยวกับงานนี้</span></label>
+        <button class="submit-btn" type="submit"><span>ยืนยันการลงทะเบียน</span><span>→</span></button>
+        <div id="message" class="message" role="status" aria-live="polite"></div>
+        <p class="privacy">ข้อมูลใช้เพื่อการจัดการลงทะเบียนงานสนธยา4ทิศเท่านั้น กรุณากรอกเฉพาะข้อมูลที่จำเป็น</p>
+      </form>
+    </section>
+  </main>
+  <footer>© <span id="year"></span> สนธยา4ทิศ · Registration Portal</footer>
+  <script src="/app.js"></script>
+</body></html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#10172a">
+  <title>เข้าสู่ระบบผู้ลงทะเบียน | สนธยา4ทิศ</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <header class="topbar"><a class="brand" href="/"><span class="brand-mark">✦</span><span>สนธยา<span class="accent">4</span>ทิศ</span></a><nav class="nav-links"><a class="admin-link" href="/">← หน้าลงทะเบียน</a><a class="admin-link" href="/admin.html">สำหรับผู้จัดงาน ↗</a></nav></header>
+  <main class="login-wrap">
+    <section class="form-card">
+      <div class="card-heading"><div><div class="eyebrow">REGISTRANT LOGIN</div><h2>เข้าสู่ระบบผู้ลงทะเบียน</h2><p>ใช้อีเมลและเบอร์โทรศัพท์ที่ลงทะเบียนไว้ เพื่อตรวจสอบข้อมูลการลงทะเบียนของคุณ</p></div><div class="mini-icon">✦</div></div>
+      <form id="login-form">
+        <div class="field"><label for="email">อีเมล <b>*</b></label><input id="email" name="email" type="email" required maxlength="200" autocomplete="email" placeholder="you@example.com"></div>
+        <div class="field"><label for="phone">เบอร์โทรศัพท์ <b>*</b></label><input id="phone" name="phone" type="tel" required minlength="8" maxlength="20" autocomplete="tel" placeholder="08X-XXX-XXXX"></div>
+        <button class="submit-btn" type="submit"><span>เข้าสู่ระบบ</span><span>→</span></button>
+        <div id="message" class="message" role="status" aria-live="polite"></div>
+      </form>
+      <div id="result" class="hidden"></div>
+      <p class="privacy">ยังไม่ได้ลงทะเบียน? <a href="/" style="color:var(--cyan)">ลงทะเบียนเข้าร่วมงาน</a></p>
+    </section>
+  </main>
+  <footer>© <span id="year"></span> สนธยา4ทิศ · Registration Portal</footer>
+  <script src="/login.js"></script>
+</body></html>
